@@ -4,7 +4,7 @@
 require_once('vendor/facebook/webdriver/lib/__init__.php');
 
 // Start Google Chrome
-$host = 'http://localhost:9515'; // this is the default
+$host = 'http://127.0.0.1:9515'; // this is the default
 $capabilities = array(WebDriverCapabilityType::BROWSER_NAME => 'chrome');
 $driver = RemoteWebDriver::create($host, $capabilities, 5000);
 
