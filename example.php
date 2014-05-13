@@ -3,9 +3,9 @@
 
 require_once('vendor/facebook/webdriver/lib/__init__.php');
 
-// Start Google Chrome
-$host = 'http://127.0.0.1:9515'; // this is the default
-$capabilities = array(WebDriverCapabilityType::BROWSER_NAME => 'chrome');
+// start Firefox with 5 second timeout
+$host = 'http://localhost:4444/wd/hub'; // this is the default
+$capabilities = array(WebDriverCapabilityType::BROWSER_NAME => 'firefox');
 $driver = RemoteWebDriver::create($host, $capabilities, 5000);
 
 // navigate to 'http://docs.seleniumhq.org/'
